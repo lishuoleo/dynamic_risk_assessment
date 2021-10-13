@@ -1,0 +1,4 @@
+Output File Location: /home/leoli/PycharmProjects/dynamic_risk_assessment/ingesteddata
+Output File Name: finaldata.csv
+Output File Record Size: 26
+Output Date: 2021-10-13
