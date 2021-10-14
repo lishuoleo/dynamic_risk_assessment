@@ -1,0 +1,34 @@
+[0, 1, 1, 1, 1]
+0.57
+[['lastmonth_activity', 'mean', 76.6, 'median', 34.0, 'standard deviation', 96.13948200401332], ['lastyear_activity', 'mean', 3100.4, 'median', 675.0, 'standard deviation', 5232.801907200386], ['number_of_employees', 'mean', 227.2, 'median', 25.0, 'standard deviation', 433.7138457554704]]
+Execution Time: 
+[0.4384523009939585, 0.7148978740005987] 
+Missing Data Summary: 
+[['lastmonth_activity', 0, '0.0%'], ['lastyear_activity', 0, '0.0%'], ['number_of_employees', 0, '0.0%']] 
+Outdated Packages: 
+Package         Version   Latest    Type
+--------------- --------- --------- -----
+certifi         2021.5.30 2021.10.8 wheel
+click           7.1.2     8.0.3     wheel
+Flask           1.1.2     2.0.2     wheel
+gunicorn        20.0.4    20.1.0    wheel
+itsdangerous    1.1.0     2.0.1     wheel
+Jinja2          2.11.3    3.0.2     wheel
+joblib          1.0.1     1.1.0     wheel
+kiwisolver      1.3.1     1.3.2     wheel
+MarkupSafe      1.1.1     2.0.1     wheel
+matplotlib      3.3.4     3.4.3     wheel
+numpy           1.20.1    1.21.2    wheel
+pandas          1.2.2     1.3.3     wheel
+Pillow          8.1.0     8.3.2     wheel
+pip             21.2.4    21.3      wheel
+python-dateutil 2.8.1     2.8.2     wheel
+pytz            2021.1    2021.3    wheel
+scikit-learn    0.24.1    1.0       wheel
+scipy           1.6.1     1.7.1     wheel
+seaborn         0.11.1    0.11.2    wheel
+setuptools      58.0.4    58.2.0    wheel
+sip             4.19.13   6.3.1     wheel
+six             1.15.0    1.16.0    wheel
+threadpoolctl   2.1.0     3.0.0     wheel
+Werkzeug        1.0.1     2.0.2     wheel
