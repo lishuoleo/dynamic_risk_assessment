@@ -12,8 +12,7 @@ with open('config.json', 'r') as f:
     config = json.load(f)
 
 dataset_csv_path = os.path.join(os.getcwd(), config['output_folder_path'])
-
-prediction_model = None
+production_model_path = os.path.join(os.path.join(os.getcwd(), config['prod_deployment_path']))
 
 
 # Prediction Endpoint
@@ -30,7 +29,7 @@ def predict():
 @app.route("/scoring", methods=['GET', 'OPTIONS'])
 def score():
     # check the score of the deployed model
-    model_score = score_model()
+    model_score = score_model(model_directory=production_model_path)
     return str(round(model_score, 2))  # add return value (a single F1 score number)
 
 

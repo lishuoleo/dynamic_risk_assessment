@@ -12,6 +12,7 @@ with open('config.json', 'r') as f:
 dataset_csv_path = os.path.join(config['output_folder_path'])
 test_data_path = os.path.join(config['test_data_path'])
 prod_deployment_path = os.path.join(os.path.join(os.getcwd(), config['prod_deployment_path']))
+model_path = os.path.join(os.getcwd(), config['output_model_path'])
 
 # dataset_csv_path = os.path.join(os.path.join(os.getcwd(), config['output_folder_path']))
 # df = pd.read_csv(os.path.join(dataset_csv_path, 'finaldata.csv'))
@@ -25,7 +26,7 @@ def model_report(dataframe=None):
         test_data = os.path.join(test_data_path, 'testdata.csv')
         df = pd.read_csv(test_data)
         y = df.pop('exited')
-        y_pred = model_predictions(dataframe=None)
+        y_pred = model_predictions(data_file_name=None)
     else:
         df = dataframe
         y = df.pop('exited')
@@ -42,7 +43,7 @@ def model_report(dataframe=None):
     plt.xlabel('Predictions', fontsize=15)
     plt.ylabel('Actuals', fontsize=15)
     plt.title(f"Confusion Matrix (F1 Score: {round(f1,2)})", fontsize=18)
-    plt.savefig(os.path.join(prod_deployment_path, "confusionmatrix.png"))
+    plt.savefig(os.path.join(model_path, "confusionmatrix.png"))
 
 
 if __name__ == '__main__':
